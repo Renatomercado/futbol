@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Partidos - Marzo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Tabla de Partidos - Marzo</h2>
+    
+    <!-- Combobox para ordenar la tabla -->
+    <select id="orderBySelect" onchange="sortTable()">
+        <option value="6">Ordenar por Puntos Obtenidos</option>
+        <option value="7">Ordenar por % de Asistencia</option>
+        <option value="4">Ordenar por Partidos Jugados</option>
+        <option value="8">Ordenar por KDA TOTAL</option>
+        <option value="9">Ordenar por KDA PERSONAL</option>
+    </select>
+
+    <table id="partidosTable">
+        <thead>
+            <tr>
+                <th>NO.</th>
+                <th>Nombre</th>
+                <th>Posición</th>
+                <th>Partidos en el mes</th>
+                <th>Partidos jugados</th>
+                <th>Partidos sin jugar</th>
+                <th>Puntos Obtenidos</th>
+                <th>% de asistencia</th>
+                <th>KDA TOTAL</th>
+                <th>KDA PERSONAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>Pablo JR</td><td>Medio</td><td>5</td><td>5</td><td>0</td><td>13</td><td>100%</td><td>2.6</td><td>2.6</td></tr>
+            <tr><td>2</td><td>Fernando</td><td>Defensa</td><td>5</td><td>4</td><td>1</td><td>12</td><td>80%</td><td>2.4</td><td>3</td></tr>
+            <tr><td>3</td><td>Gabriel</td><td>Medio</td><td>5</td><td>5</td><td>0</td><td>10</td><td>100%</td><td>2</td><td>2</td></tr>
+            <tr><td>4</td><td>Pablo</td><td>Medio</td><td>5</td><td>4</td><td>1</td><td>7</td><td>80%</td><td>1.4</td><td>1.75</td></tr>
+            <tr><td>5</td><td>Ale</td><td>Delantero</td><td>5</td><td>5</td><td>0</td><td>7</td><td>100%</td><td>1.4</td><td>1.4</td></tr>
+            <tr><td>6</td><td>Renato</td><td>Medio</td><td>5</td><td>5</td><td>0</td><td>7</td><td>100%</td><td>1.4</td><td>1.4</td></tr>
+            <tr><td>7</td><td>Rene</td><td>Defensa</td><td>5</td><td>3</td><td>2</td><td>4</td><td>60%</td><td>0.8</td><td>1.3</td></tr>
+            <tr><td>8</td><td>Felipe</td><td>Defensa</td><td>5</td><td>4</td><td>1</td><td>4</td><td>80%</td><td>0.8</td><td>1.0</td></tr>
+            <tr><td>9</td><td>Angelo</td><td>Delantero</td><td>5</td><td>4</td><td>1</td><td>4</td><td>80%</td><td>0.8</td><td>1.0</td></tr>
+            <tr><td>10</td><td>Mario</td><td>Medio</td><td>5</td><td>4</td><td>1</td><td>4</td><td>80%</td><td>0.8</td><td>1.0</td></tr>
+            <tr><td>11</td><td>Cristobal</td><td>Delantero</td><td>5</td><td>5</td><td>0</td><td>4</td><td>100%</td><td>0.8</td><td>0.8</td></tr>
+            <tr><td>12</td><td>Wiwi</td><td>Arco</td><td>5</td><td>1</td><td>4</td><td>3</td><td>20%</td><td>0.6</td><td>3</td></tr>
+            <tr><td>13</td><td>Alvaro</td><td>Delantero</td><td>5</td><td>2</td><td>3</td><td>3</td><td>40%</td><td>0.6</td><td>1.5</td></tr>
+            <tr><td>14</td><td>Carlos</td><td>Delantero</td><td>5</td><td>1</td><td>4</td><td>1</td><td>20%</td><td>0.2</td><td>1.0</td></tr>
+            <tr><td>15</td><td>Willy</td><td>Defensa</td><td>5</td><td>3</td><td>2</td><td>1</td><td>60%</td><td>0.2</td><td>0.3</td></tr>
+            <tr><td>16</td><td>Lucas</td><td>Defensa</td><td>5</td><td>3</td><td>2</td><td>0</td><td>60%</td><td>0</td><td>0.0</td></tr>
+            <tr><td>17</td><td>Matias</td><td>Delantero</td><td>5</td><td>1</td><td>4</td><td>0</td><td>20%</td><td>0</td><td>0.0</td></tr>
+            <tr><td>18</td><td>Andres</td><td>Defensa</td><td>5</td><td>1</td><td>4</td><td>0</td><td>20%</td><td>0</td><td>0.0</td></tr>
+            <tr><td>19</td><td>Camilo</td><td>Delantero</td><td>5</td><td>0</td><td>5</td><td>0</td><td>0%</td><td>0</td><td>0.0</td></tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
